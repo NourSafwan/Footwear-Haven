@@ -100,7 +100,7 @@ const Product = () => {
         position="top-right"
         reverseOrder={false}
         toastOptions={{
-          className: "toast",
+          className: "flex justify-center items-center gap-2 px-7 py-4 font-montserrat text-lg leading-none  rounded border-b-coral-red bg-white text-coral-red border-2",
           style: {},
         }}
       />
