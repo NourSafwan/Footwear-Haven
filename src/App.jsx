@@ -4,7 +4,7 @@ import {
   AboutUsPage,
   ContactUsPage,
   Product,
-  Error
+  Error,
 } from "./pages";
 import {
   createBrowserRouter,
@@ -17,12 +17,13 @@ import { createContext, useState } from "react";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />} errorElement={<Error/>}>
+    <Route path="/" element={<RootLayout />} errorElement={<Error />}>
       <Route index element={<HomePage />} />
       <Route path="/Products" element={<ProductsPage />} />
       <Route path="/AboutUs" element={<AboutUsPage />} />
       <Route path="/ContactUs" element={<ContactUsPage />} />
       <Route path="/Product/:id" element={<Product />} />
+      <Route path="*" element={<Error />} />
     </Route>
   )
 );
