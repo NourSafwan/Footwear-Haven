@@ -42,7 +42,7 @@ const Cart = ({ visible }) => {
 
   return (
     <div
-      className={`pt-20 pb-10 pl-10 z-40 bg-pale-blue max-sm:w-full sm:w-full md:w-[75%]  lg:w-[50%] xl:w-[40%] fixed right-0 top-0  h-dvh ${
+      className={`pt-20 pb-10 pl-10 z-40 max-sm:px-3 bg-pale-blue max-sm:w-full sm:w-full md:w-[75%]  lg:w-[50%] xl:w-[40%] fixed right-0 top-0  h-dvh ${
         visible ? "visible " : "hidden "
       }`}
     >
@@ -60,7 +60,7 @@ const Cart = ({ visible }) => {
                 className="w-20"
               />
               <span className="flex flex-1 m-2">{product.name}</span>
-              <span className="flex flex-1 text-lg m-2 font-montserrat font-semibold text-coral-red ">
+              <span className="flex flex-1  m-2 font-montserrat font-semibold text-coral-red ">
                 ${parseFloat(product.price.replace("$", "") * product.quantity)}
               </span>
               <span className="flex flex-1 items-center justify-center m-2">
@@ -109,7 +109,7 @@ const Cart = ({ visible }) => {
         )}
         <div className="w-full flex justify-center my-5">
           {cartProducts.length > 0 && (
-            <a href="/" target="_blank">
+            <a href="/">
               <Button label={"Confirm Order"} />
             </a>
           )}
