@@ -36,11 +36,11 @@ const Product = () => {
 
   const notify = () =>
     toast((t) => (
-      <div className="relative flex ">
-        <FaRegCheckCircle className="absolute -left-7" />
+      <div className="relative flex text-coral-red  bg-white justify-center items-center gap-2 px-7 py-4 font-montserrat text-lg leading-none ">
+        <FaRegCheckCircle className="absolute -left-3" size={25} />
         <span>Added successfully</span>
-        <button className="absolute -top-2.5 -right-7">
-          <IoClose onClick={() => toast.dismiss(t.id)} />
+        <button className="absolute -top-1 -right-3">
+          <IoClose onClick={() => toast.dismiss(t.id)} size={25} />
         </button>
       </div>
     ));
@@ -98,10 +98,9 @@ const Product = () => {
       </div>
       <Toaster
         position="top-right"
-        reverseOrder={false}
+        reverseOrder={true}
         toastOptions={{
-          className: "flex justify-center items-center gap-2 px-7 py-4 font-montserrat text-lg leading-none  rounded border-b-coral-red bg-white text-coral-red border-2",
-          style: {},
+          className: "toast",
         }}
       />
       <Footer />

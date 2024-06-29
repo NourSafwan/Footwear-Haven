@@ -61,6 +61,9 @@
   .btn1 {
     @apply flex justify-center items-center gap-2 px-7 py-4 font-montserrat text-lg leading-none bg-coral-red rounded-full text-white border-coral-red transition duration-300 ease-in-out hover:bg-white hover:text-coral-red border-2;
   }
+  .toast {
+    @apply flex  rounded border-b-coral-red border-2;
+  }
   .navBg {
     background: rgba(255, 255, 255, 0.21);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
